@@ -6,7 +6,8 @@ Input per utente (numero) dell'età del passeggero;
 Sono valori validi sono in forma numerica?
 - Se NO: avvisare errore e ritornoare alla compilazione Input km e età.
 - Se SI:
-Il prezzo del biglietto è definito in base ai km (0.21 € al km)
+Il prezzo del biglietto è definito in base ai km (0.21 € al km):
+
 Condizione:
 - SE x < 18 allora va applicato uno sconto del 20% per i minorenni;
 - SE x >= 65 allora va applicato uno sconto del 40% per gli over 65.
