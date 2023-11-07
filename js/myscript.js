@@ -28,13 +28,14 @@ if (!isNaN(kmInput) && !isNaN(etaInput)) {
         scontoBiglietto = (prezzoBiglietto * 100) / scontoSenior;
     }
 
-
-// 5) Stampare in console il prezzoBiglietto finale
+// 5) Stampare in console il prezzoBiglietto finale in console:
     prezzoBiglietto -= scontoBiglietto;
     console.log('Il prezzo del biglietto è: ', prezzoBiglietto.toFixed(2));
+// 3)(condizione) SE NO:
 } else {
     console.log('Errore hai digidato dei NotANumber!');
 }
+
 /* 6) MILESTONE 1:
     Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente 
     due input e un bottone (non stilizzati), realizziamo le specifiche scritte sopra. 
