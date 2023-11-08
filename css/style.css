@@ -4,8 +4,17 @@ CSS
 
 body {
     font-family: 'Montagu Slab', serif;
+    font-size: .625rem;
 }
 
 h1 {
     font-family: Helvetica, sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.w-20 {
+    width: 20%;
 }
