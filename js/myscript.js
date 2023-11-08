@@ -34,11 +34,11 @@ FILE JAVASCRIPT
     // 8) dichiaro e assegno valore al modulo biglietto virtuale che comparità qunado genererò il prezzo biglietto:
     const elementModuloBigliettoVirtuale = document.getElementById('modulo-biglietto-virtuale');
     // dichiaro gli altri elementi del biglietto virtuale che dovrò far comparire nel dom:
-    const elementVirtualeIdUtente = document.querySelector('.op-naming');
-    const elementVirtualeOffert = document.querySelector('.op-offert');
+    const elementVirtualeIdUtente = document.querySelector('.value-id-utente');
+    const elementVirtualeOffert = document.querySelector('.value-type-offert');
     const elementVirtualeSector = document.querySelector('.op-sector');
     const elementVirtualeCode = document.querySelector('.op-code');
-    const elementVirtualePrezzoFinale = document.querySelector('.op-prezzo-finale');
+    const elementVirtualePrezzoFinale = document.querySelector('.price-to-pay');
 
     // 5) dichiaro e assegno valore del botton per annullare gli input per generare il costo del biglietto;
     const elementAnnullaButton = document.getElementById('btn-annull');
@@ -82,11 +82,14 @@ FILE JAVASCRIPT
 
         // ASSEGNO VALORI DOM
         // 10) assegno valore nome utente in Dom
-        elementIdUtente.innerHTML = elementIdUtente.value;
+        elementVirtualeIdUtente.innerHTML = elementIdUtente.value;
         // 10) assegno valore tariffa in Dom
         elementVirtualeOffert.innerHTML = typeOffert;
         // 10) assegno valore prezzofinale in Dom
-        elementVirtualePrezzoFinale.innerHTML = `${prezzoBiglietto.toFixed(2)} €`
+        elementVirtualePrezzoFinale.innerHTML = `${prezzoBiglietto.toFixed(2)} €`;
+
+        // 11) all'evento genera tolgo la classe hidden nel dom per mostrare il biglietto generato:
+        elementModuloBigliettoVirtuale.classList.remove('hidden');
     });
 
     
@@ -98,4 +101,7 @@ FILE JAVASCRIPT
             elementKmUtente.value = '';
             elementEtaUtente.value = null;
             console.log('annullo i bottoni');
+
+        // 12) all'evento annulla aggiungo la classe hidden nel dom per mostrare il biglietto generato:
+        elementModuloBigliettoVirtuale.classList.add('hidden');
     });
