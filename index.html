@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acquisto biglietto treni</title>
-    <!-- collegamento foglio di stile CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- /collegamento foglio di stile CSS-->
-    <!-- collegamento font google -->
+    <!--collegamento font google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100;16..144,400;16..144,600&display=swap" rel="stylesheet">
     <!-- /collegamento font google -->
+    <!-- collegamento foglio di stile CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- /collegamento foglio di stile CSS-->
 </head>
 <body>
-    <h1>Acquista il tuo documento di viaggio</h1>
-    <!-- <form action="#" method="get"> -->
-        <div id="eta-input">
-            <label for="eta">Età</label>
-            <input type="text" id="eta" placeholder="es.18" required>
-        </div>
-        <div id="km-input">
-            <label for="km">Km</label>
-            <input type="text" id="km" placeholder="es. 10" required>
-        </div>
-        <input type="submit" id="btn-submit" value="Acquista">
-    <!-- </form> -->
+    <main>
+        <h1>Acquista il tuo documento di viaggio</h1>
+        <form id="input-form">
+            <div id="km-input">
+                <label for="km">Km</label>
+                <input type="number" id="km" placeholder="es. 10, 20, 20.5" required>
+            </div>
+            <div id="eta-input">
+                <label for="eta">Età</label>
+                <input type="text" id="eta" placeholder="es.18, 20, 65" required>
+            </div>
+            <input type="submit" id="btn-submit" value="Genera">
+        </form>
+    </main>
 
     <script src="js/myscript.js"></script>
 </body>
