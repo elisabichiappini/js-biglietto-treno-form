@@ -16,16 +16,28 @@
 <body>
     <main>
         <h1>Acquista il tuo documento di viaggio</h1>
+        <!-- input per utente inserimento km -->
         <div id="km-input">
             <label for="km">Lunghezza in Km</label>
             <input type="number" id="km" placeholder="es. 10, 20, 20.5" required>
         </div>
+        <!-- /input per utente inserimento km -->
+        <!-- input per utente inserimento eta in fascia -->
         <div id="eta-input">
             <label for="eta">La tua età</label>
-            <input type="text" id="eta" placeholder="es.18, 20, 65" required>
+            <select name="" id="eta" class="eta-utente" required>
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="senior65">Senior 65</option>
+            </select>
         </div>
+        <!-- /input per utente inserimento eta in fascia -->
+        <!-- input genera -->
         <input type="submit" id="btn-submit" value="Genera">
+        <!-- /input genera -->
+        <!-- input annulla -->
         <input type="button" id="btn-annull" value="Annulla">
+        <!-- /input annulla -->
     </main>
 
     <script src="js/myscript.js"></script>
