@@ -2,17 +2,78 @@
 CSS
 ********************************************************************/
 
+/*
+RESET
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+COMMON
+*/
+
 body {
     font-family: 'Montagu Slab', serif;
+    font-display: block;
     font-size: .625rem;
+    background-image: url('/img/treni.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding: 50px 0;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 h1 {
+    background-color: rgb(254, 244, 244);
+    color:rgb(216, 20, 20);
+    border-radius: 5px;
     font-family: Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    font-weight: bolder;
+    padding: 5px 0;
+    margin-bottom: 15px;
 }
+
+h5 {
+    color:rgb(216, 20, 20);
+}
+
+h2, h3 {
+    margin-bottom: .9375rem;
+}
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+UTILITES
+*/
 
 .d-flex {
     display: flex;
+    justify-content: center;
+}
+
+.p-30 {
+    padding: 30px 0 15px;
+}
+
+.g-20 {
+    gap: 20px;
+}
+
+.mt-30{
+    margin-top: 30px;
 }
 
 .w-20 {
@@ -21,4 +82,32 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+#modulo-biglietto-virtuale,
+#modulo-input-utente {
+    border-radius: 5px;
+    background-color: rgb(254, 244, 244);
+    text-align: center;
+}
+
+#modulo-biglietto-virtuale {
+    padding: 15px;
+    margin-top: 15px;
+    background-color: rgb(224, 251, 224);
+}
+
+#modulo-input-utente {
+    margin-bottom: 20px;
+}
+
+input[type=button],
+input[type=submit]{
+    all:unset;
+    padding: 5px 15px;
+    background-color: rgb(216, 20, 20);
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
 }
